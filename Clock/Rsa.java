@@ -1,3 +1,4 @@
+package Lab_Eses_Sem5.Clock;
 import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
 import java.security.*;
@@ -19,7 +20,6 @@ public class Rsa {
         System.out.println("Sender: Generated AES key (Base64) = " +
                 Base64.getEncoder().encodeToString(aesKey.getEncoded()));
 
-                
         // ---------- Sender encrypts AES key with RSA ----------
         Cipher rsa = Cipher.getInstance("RSA");
         rsa.init(Cipher.ENCRYPT_MODE, pub);
